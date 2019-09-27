@@ -3,20 +3,125 @@
 
 <head>
   <title></title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="description" content="Page description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/imgs/logo.png" width="60" height="60" alt="" />
+    </a>
+    <form class="form-inline mr-auto icon-smallscreen">
+      <ul class="navbar-nav" style="display: inline-block;">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class=" cartHasNotification fas fa-circle"></i><i class="nav-link-icon fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+      <input class=" form-control navbar-search-textbox" type="search" placeholder="بحث ... " aria-label="Search" />
+      <button class="btn navbar-search-btn my-2 my-sm-0" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><i class="nav-link-icon fas fa-home"></i>
+            <span class="navbar-link-span">الرئيسية</span>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-box-open"></i>
+            <span class="navbar-link-span">الطلبات</span>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link dropDown-navLink dropDown-navLink dropdown-toggle" href="#" role="button"
+            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+              class="nav-link-icon fas fa-boxes"></i>
+            <span class="navbar-link-span">الخدمات <i class="fas fa-angle-down"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu nav-link-dropdown" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-palette"></i> تصميم</a>
+
+            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
+            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
+            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-camera"></i> تصوير المناسبات</a>
+            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-photo-video"></i> الرسوم
+              المتحركة</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-file-invoice"></i>
+            <span class="navbar-link-span">الشكاوي والمقترحات</span>
+          </a>
+        </li> -->
+        <li class="nav-item ">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-headset"></i>
+            <span class="navbar-link-span">تواصل معنا</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-sign-in-alt"></i>
+            <span class="navbar-link-span">تسجيل الدخول</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-user-plus"></i>
+            <span class="navbar-link-span">تسجيل</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item form-ul-item">
+          <form class="form-inline form-ul">
+            <input class=" form-control navbar-search-textbox form-ul-item-textbox" type="search" placeholder="بحث ... "
+              aria-label="Search" />
+            <button class="btn navbar-search-btn form-ul-item-srchBtn my-2 my-sm-0" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0 icon-bigscreen">
+        <ul class="navbar-nav" style="display: inline-block;">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class=" cartHasNotification fas fa-circle"></i><i class="nav-link-icon fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+        <input class=" form-control navbar-search-textbox" type="search" placeholder="بحث ... " aria-label="Search" />
+        <button class="btn navbar-search-btn my-2 my-sm-0" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </nav>
+  
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
+
+
+
 </body>
 
 </html>
