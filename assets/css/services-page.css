@@ -5,33 +5,50 @@
   background-size: cover;
   padding: 40px 20px;
 }
+
 .service-page-item-1 {
   border-color: red !important;
 }
+
 .service-page-item-2 {
   border-color: blue !important;
 }
+
 .service-page-item-3 {
   border-color: orange !important;
 }
+
 .service-page-item-4 {
   border-color: green !important;
 }
+
 .service-page-item-5 {
   border-color: #ffdd2a !important;
 }
+
 .service-page-item-6 {
-  border-color: purple!important;
+  border-color: purple !important;
 }
+.service-page-item-div{
+margin: 50px 40px;
+transition: 0.4s;
+box-shadow: 2px 8px 17px #848484;
+
+
+
+}
+
 .service-page-item {
-  margin: 50px 40px;
   padding: 10px;
   border: 8px solid;
   background-color: white;
+  transition: 0.2s;
 }
 
+
+
 .service-page-item .item-price {
-    margin-bottom: -30px;
+  margin-bottom: -30px;
   padding: 5px 0px;
   position: relative;
   bottom: 39px;
@@ -45,25 +62,32 @@
 .service-page-item-1 .item-price {
   background-color: red !important;
 }
+
 .service-page-item-2 .item-price {
   background-color: blue !important;
 }
+
 .service-page-item-3 .item-price {
   background-color: orange !important;
 }
+
 .service-page-item-4 .item-price {
   background-color: green !important;
 }
+
 .service-page-item-5 .item-price {
   background-color: #ffdd2a !important;
-  color:black !important;
+  color: black !important;
 }
+
 .service-page-item-6 .item-price {
   background-color: purple !important;
 }
+
 .service-page-item img {
   width: 100%;
   border: 2px solid gray;
+  transition: 0.4s;
 }
 
 .service-page-item .item-info {
@@ -105,6 +129,7 @@
   color: rgb(255, 208, 0);
 }
 
+
 .service-page-item .order-red {
   padding: 8px 20px;
   margin-left: auto;
@@ -115,24 +140,30 @@
 }
 
 .service-page-item-1 .order-red {
-    background-color: red !important;
-  }
-  .service-page-item-2 .order-red {
-    background-color: blue !important;
-  }
-  .service-page-item-3 .order-red {
-    background-color: orange !important;
-  }
-  .service-page-item-4 .order-red {
-    background-color: green !important;
-  }
-  .service-page-item-5 .order-red {
-    background-color: #ffdd2a !important;
-    color:black !important;
-  }
-  .service-page-item-6 .order-red {
-    background-color: purple !important;
-  }
+  background-color: red !important;
+}
+
+.service-page-item-2 .order-red {
+  background-color: blue !important;
+}
+
+.service-page-item-3 .order-red {
+  background-color: orange !important;
+}
+
+.service-page-item-4 .order-red {
+  background-color: green !important;
+}
+
+.service-page-item-5 .order-red {
+  background-color: #ffdd2a !important;
+  color: black !important;
+}
+
+.service-page-item-6 .order-red {
+  background-color: purple !important;
+}
+
 .service-page-item .order-btn {
   margin-top: -30px;
   position: relative;
@@ -140,32 +171,51 @@
   display: block;
   transition: 0.4s;
 }
+
 .service-page-item .order-btn:hover {
   padding: 8px 35px;
 }
 
+
+a.service-page-item-href-div {
+  transition: 0.4s !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a.service-page-item-href-div:hover .service-page-item {
+
+  -moz-box-shadow: 4px 17px 20px #6e6e6e;
+  -webkit-box-shadow: 4px 17px 20px #848484;
+  box-shadow: 4px 17px 20px #848484;
+  /* background-color: #f1f1f1; */
+  padding: 10px 15px;
+}
+
 @media (max-width: 1100px) {
-  .service-page-item {
+  .service-page-item-div {
     margin: 50px 20px;
-    padding: 8px;
   }
 }
+
 @media (max-width: 900px) {
-  .service-page-item {
+  .service-page-item-div {
     margin: 50px 0px;
-    padding: 8px;
     border-width: 7px;
   }
 }
+
 @media (max-width: 767px) {
   .service-page-item .item-price {
     bottom: 30px;
     padding: 3px 15px;
   }
+
   .service-page-item {
     margin: 50px 0px;
     border-width: 5px;
   }
+
   .service-page-item .order-btn {
     margin-top: -20px;
     top: 30px;
@@ -176,21 +226,26 @@
     font-size: 14px;
   }
 }
+
 @media (max-width: 575px) {
   .service-page-item-col {
     width: 50%;
   }
+
   .service-page {
     padding: 30px 10px;
   }
+
   .service-page-item .item-info p {
     font-size: 14px;
     margin-bottom: 20px;
   }
+
   .service-page-item .item-info .item-provider,
   .service-page-item .item-info .item-buyer {
     font-size: 12px;
   }
+
   .service-page-item .item-info .item-rating .item-rate-star {
     font-size: 16px;
   }

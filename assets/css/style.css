@@ -18,6 +18,14 @@ body {
   display: none;
 }
 
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  text-decoration: none !important;
+}
+
 .nav-link-dropDown {
   display: none;
   width: 100px;
@@ -292,6 +300,9 @@ body {
   bottom: 50px;
   
 }
+.chatting-div .chatting-btn{
+  color:white !important
+}
 .chatting-div a{
   box-shadow: 0px 4px 7px #6d6d6d;
   background-color: #662d91;
@@ -300,7 +311,7 @@ body {
   padding: 10px 50px;
   transition: 0.4s;
   text-decoration: none;
-  color:white;
+  color:white !important;
 }
 .chatting-div a:hover{
   background-color: #8642b9;

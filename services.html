@@ -13,13 +13,11 @@
   <link rel="stylesheet" href="assets/css/rtl.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
-
   <!-- offer-row -->
   <link rel="stylesheet" href="assets/css/offer-row.css" />
 
-  <!-- service-page -->
-  <link rel="stylesheet" href="assets/css/service-page.css" />
-
+  <!-- services-page -->
+  <link rel="stylesheet" href="assets/css/services-page.css" />
 </head>
 
 <body>
@@ -51,6 +49,11 @@
             <span class="navbar-link-span">الرئيسية</span>
           </a>
         </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-box-open"></i>
+            <span class="navbar-link-span">الطلبات</span>
+          </a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link dropDown-navLink dropDown-navLink dropdown-toggle" href="#" role="button"
             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
@@ -59,18 +62,13 @@
             </span>
           </a>
           <div class="dropdown-menu nav-link-dropdown" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-palette"></i> تصميم</a>
+            <a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i> تصميم</a>
             <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
             <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
             <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-camera"></i> تصوير المناسبات</a>
             <a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-photo-video"></i> الرسوم
               المتحركة</a>
           </div>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-box-open"></i>
-            <span class="navbar-link-span">الطلبات</span>
-          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="nav-link-icon fas fa-file-invoice"></i>
@@ -121,7 +119,6 @@
     </div>
   </nav>
 
-
   <section>
     <div class="container-fluid">
       <div class="section-row new-services">
@@ -146,72 +143,57 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-            <div class="service-page-item service-page-item-1">
-              <div class=" order-red item-price">
-                20$
-              </div>
-              <img src="./assets/imgs/services-item-2.png">
-              <div class="item-info">
-                <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
-                <p class="item-provider">
-                  <span class="item-provider-title">مقدم الخدمة: </span>
-                  <span class="item-provider-name">اسامة عسكر</span></p>
-                <p class="item-buyer">
-                  <i class="fas fa-shopping-cart pl-2"></i>
-                  10 طلبوا هذه الخدمة
-                </p>
-                <p class="item-rating">
-                  <i class="item-rate-star fas fa-star pl-0 active"></i>
-                  <i class="item-rate-star fas fa-star pl-0 active"></i>
-                  <i class="item-rate-star fas fa-star pl-0 active"></i>
-                  <i class="item-rate-star fas fa-star pl-0"></i>
-                  <i class="item-rate-star fas fa-star pl-0"></i>
-                </p>
-              </div>
-              <button class="btn order-red order-btn">
-                اطلب الأن
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-              <div class="service-page-item service-page-item-2">
-                <div class=" order-red item-price">
-                  20$
-                </div>
-                <img src="./assets/imgs/services-item-2.png">
-                <div class="item-info">
-                  <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
-                  <p class="item-provider">
-                    <span class="item-provider-title">مقدم الخدمة: </span>
-                    <span class="item-provider-name">اسامة عسكر</span></p>
-                  <p class="item-buyer">
-                    <i class="fas fa-shopping-cart pl-2"></i>
-                    10 طلبوا هذه الخدمة
-                  </p>
-                  <p class="item-rating">
-                    <i class="item-rate-star fas fa-star pl-0 active"></i>
-                    <i class="item-rate-star fas fa-star pl-0 active"></i>
-                    <i class="item-rate-star fas fa-star pl-0 active"></i>
-                    <i class="item-rate-star fas fa-star pl-0"></i>
-                    <i class="item-rate-star fas fa-star pl-0"></i>
-                  </p>
-                </div>
-                <button class="btn order-red order-btn">
-                  اطلب الأن
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-                <div class="service-page-item service-page-item-3">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-1">
                   <div class=" order-red item-price">
                     20$
                   </div>
-                  <img src="./assets/imgs/services-item-2.png">
+                  <img src="./assets/imgs/services-item-2.png" />
                   <div class="item-info">
-                    <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
                     <p class="item-provider">
                       <span class="item-provider-title">مقدم الخدمة: </span>
-                      <span class="item-provider-name">اسامة عسكر</span></p>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
+                    <p class="item-buyer">
+                      <i class="fas fa-shopping-cart pl-2"></i>
+                      10 طلبوا هذه الخدمة
+                    </p>
+                    <p class="item-rating">
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                    </p>
+                  </div>
+
+                  <button class="btn order-red order-btn">
+                    اطلب الأن
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-2">
+                  <div class=" order-red item-price">
+                    20$
+                  </div>
+                  <img src="./assets/imgs/services-item-2.png" />
+                  <div class="item-info">
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
+                    <p class="item-provider">
+                      <span class="item-provider-title">مقدم الخدمة: </span>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
                     <p class="item-buyer">
                       <i class="fas fa-shopping-cart pl-2"></i>
                       10 طلبوا هذه الخدمة
@@ -228,95 +210,156 @@
                     اطلب الأن
                   </button>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-                  <div class="service-page-item service-page-item-4">
-                    <div class=" order-red item-price">
-                      20$
-                    </div>
-                    <img src="./assets/imgs/services-item-2.png">
-                    <div class="item-info">
-                      <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
-                      <p class="item-provider">
-                        <span class="item-provider-title">مقدم الخدمة: </span>
-                        <span class="item-provider-name">اسامة عسكر</span></p>
-                      <p class="item-buyer">
-                        <i class="fas fa-shopping-cart pl-2"></i>
-                        10 طلبوا هذه الخدمة
-                      </p>
-                      <p class="item-rating">
-                        <i class="item-rate-star fas fa-star pl-0 active"></i>
-                        <i class="item-rate-star fas fa-star pl-0 active"></i>
-                        <i class="item-rate-star fas fa-star pl-0 active"></i>
-                        <i class="item-rate-star fas fa-star pl-0"></i>
-                        <i class="item-rate-star fas fa-star pl-0"></i>
-                      </p>
-                    </div>
-                    <button class="btn order-red order-btn">
-                      اطلب الأن
-                    </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-3">
+                  <div class=" order-red item-price">
+                    20$
                   </div>
+                  <img src="./assets/imgs/services-item-2.png" />
+                  <div class="item-info">
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
+                    <p class="item-provider">
+                      <span class="item-provider-title">مقدم الخدمة: </span>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
+                    <p class="item-buyer">
+                      <i class="fas fa-shopping-cart pl-2"></i>
+                      10 طلبوا هذه الخدمة
+                    </p>
+                    <p class="item-rating">
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                    </p>
+                  </div>
+
+                  <button class="btn order-red order-btn">
+                    اطلب الأن
+                  </button>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-                    <div class="service-page-item service-page-item-5">
-                      <div class=" order-red item-price">
-                        20$
-                      </div>
-                      <img src="./assets/imgs/services-item-2.png">
-                      <div class="item-info">
-                        <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
-                        <p class="item-provider">
-                          <span class="item-provider-title">مقدم الخدمة: </span>
-                          <span class="item-provider-name">اسامة عسكر</span></p>
-                        <p class="item-buyer">
-                          <i class="fas fa-shopping-cart pl-2"></i>
-                          10 طلبوا هذه الخدمة
-                        </p>
-                        <p class="item-rating">
-                          <i class="item-rate-star fas fa-star pl-0 active"></i>
-                          <i class="item-rate-star fas fa-star pl-0 active"></i>
-                          <i class="item-rate-star fas fa-star pl-0 active"></i>
-                          <i class="item-rate-star fas fa-star pl-0"></i>
-                          <i class="item-rate-star fas fa-star pl-0"></i>
-                        </p>
-                      </div>
-                      <button class="btn order-red order-btn">
-                        اطلب الأن
-                      </button>
-                    </div>
-                  </div>  
-                  <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
-                      <div class="service-page-item service-page-item-6">
-                        <div class=" order-red item-price">
-                          20$
-                        </div>
-                        <img src="./assets/imgs/services-item-2.png">
-                        <div class="item-info">
-                          <p class="item-name"><b>تصميم شعار احترافي ومميز كما تريد</b></p>
-                          <p class="item-provider">
-                            <span class="item-provider-title">مقدم الخدمة: </span>
-                            <span class="item-provider-name">اسامة عسكر</span></p>
-                          <p class="item-buyer">
-                            <i class="fas fa-shopping-cart pl-2"></i>
-                            10 طلبوا هذه الخدمة
-                          </p>
-                          <p class="item-rating">
-                            <i class="item-rate-star fas fa-star pl-0 active"></i>
-                            <i class="item-rate-star fas fa-star pl-0 active"></i>
-                            <i class="item-rate-star fas fa-star pl-0 active"></i>
-                            <i class="item-rate-star fas fa-star pl-0"></i>
-                            <i class="item-rate-star fas fa-star pl-0"></i>
-                          </p>
-                        </div>
-                        <button class="btn order-red order-btn">
-                          اطلب الأن
-                        </button>
-                      </div>
-                    </div>  
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-4">
+                  <div class=" order-red item-price">
+                    20$
+                  </div>
+                  <img src="./assets/imgs/services-item-2.png" />
+                  <div class="item-info">
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
+                    <p class="item-provider">
+                      <span class="item-provider-title">مقدم الخدمة: </span>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
+                    <p class="item-buyer">
+                      <i class="fas fa-shopping-cart pl-2"></i>
+                      10 طلبوا هذه الخدمة
+                    </p>
+                    <p class="item-rating">
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                    </p>
+                  </div>
+
+                  <button class="btn order-red order-btn">
+                    اطلب الأن
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-5">
+                  <div class=" order-red item-price">
+                    20$
+                  </div>
+                  <img src="./assets/imgs/services-item-2.png" />
+                  <div class="item-info">
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
+                    <p class="item-provider">
+                      <span class="item-provider-title">مقدم الخدمة: </span>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
+                    <p class="item-buyer">
+                      <i class="fas fa-shopping-cart pl-2"></i>
+                      10 طلبوا هذه الخدمة
+                    </p>
+                    <p class="item-rating">
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                    </p>
+                  </div>
+
+                  <button class="btn order-red order-btn">
+                    اطلب الأن
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 service-page-item-col">
+            <div class="service-page-item-div">
+              <a class="service-page-item-href-div" href="service-details.html">
+                <div class="service-page-item service-page-item-6">
+                  <div class=" order-red item-price">
+                    20$
+                  </div>
+                  <img src="./assets/imgs/services-item-2.png" />
+                  <div class="item-info">
+                    <p class="item-name">
+                      <b>تصميم شعار احترافي ومميز كما تريد</b>
+                    </p>
+                    <p class="item-provider">
+                      <span class="item-provider-title">مقدم الخدمة: </span>
+                      <span class="item-provider-name">اسامة عسكر</span>
+                    </p>
+                    <p class="item-buyer">
+                      <i class="fas fa-shopping-cart pl-2"></i>
+                      10 طلبوا هذه الخدمة
+                    </p>
+                    <p class="item-rating">
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0 active"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                      <i class="item-rate-star fas fa-star pl-0"></i>
+                    </p>
+                  </div>
+
+                  <button class="btn order-red order-btn">
+                    اطلب الأن
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
   <section>
     <div class="offer-row-container">
