@@ -75,6 +75,9 @@ a:hover{
   display: none;
 }
 
+.form-nav{
+  display: inline-flex;
+}
 @media (min-width: 992px) {
   .icon-bigscreen {
     display: inline-block;
