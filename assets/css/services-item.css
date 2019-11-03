@@ -12,31 +12,59 @@
     background-color: white;
     box-shadow: 2px 4px 8px #848484;
     transition: 0.4s;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .services-item a {
     text-decoration: none;
   }
-  
-  .services-item:hover {
-    box-shadow: 2px 8px 17px #848484;
-    padding: 10px 15px 10px 15px;
-    background-color: rgb(240, 240, 240);
-  
+  .fav-icon{
+    visibility: hidden;
+    color:white;
   }
-  
-  .services-item:hover .services-item-info .item-name {
-    /* text-decoration: underline; */
+  .services-item:hover .on-item-option{
+    width: 20%;
+    z-index: 3;
     transition: 0.4s;
   }
+
+  .services-item:hover .on-item-option:hover{
+    background-color: gray;
+    cursor: pointer;
+    
+  }
+  div.popover-body{
+    
+  }
+
+  .services-item:hover .fav-icon{
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+    visibility: visible;
+  }
+
+  .services-item-info .item-name:hover {
+    color: #0071bc;
+    text-decoration: underline;    
+  } 
   
   .services-item-header img {
     border: 2px solid gray;
   }
   
+  .on-item-option{
+    margin-top: -40px;
+    width: 0%;
+    position: relative;
+    top: 45px;
+    padding: 10px 15px;
+    padding-right: 17px;
+    background-color: rgba(128, 128, 128, 0.582);
+    transition: 0.4s;
+    z-index: -2;
+  }
+
   .item-price {
-  
     position: relative;
     width: 200px;
     height: 150px;
@@ -61,6 +89,7 @@
   .services-item-header .item-price span {
     text-decoration: none;
     color: black;
+    z-index: 1;
   }
   
   
@@ -87,6 +116,12 @@
   .services-item-info .item-details .services-provider {
     font-size: 15px;
     color: purple;
+    transition: 0.4s;
+  }
+  .services-item-info .item-details .services-provider:hover {
+    font-size: 15px;
+    color: purple;
+    text-decoration: underline;
   }
   
   .services-item-footer .services-item-btn {

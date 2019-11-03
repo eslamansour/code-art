@@ -87,12 +87,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-sign-in-alt"></i>
+          <a class="nav-link" href="login.html"><i class="nav-link-icon fas fa-sign-in-alt"></i>
             <span class="navbar-link-span">تسجيل الدخول</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="nav-link-icon fas fa-user-plus"></i>
+          <a class="nav-link" href="signup.html"><i class="nav-link-icon fas fa-user-plus"></i>
             <span class="navbar-link-span">تسجيل</span>
           </a>
         </li>
@@ -207,94 +207,126 @@
           </svg>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
-            <div class="services-item-col">
-              <div class="services-item">
-                <a href="services.html">
-                  <div class="services-item-header">
-                    <img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
-                  </div>
-                  <div class="services-item-info">
-                    <span class="item-name">تصميم مواقع</span>
-                    <div class="item-details">
-                      <span>تصميم مواقع بطريقة محترفة ومتميزة</span>
-                      <br /><br />
-                      <span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="services-item-footer">
-                <button class="btn services-item-btn">اطلب الآن</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
-            <div class="services-item-col">
-              <div class="services-item">
-                <a href="services.html">
-                  <div class="services-item-header">
-                    <img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
-                  </div>
-                  <div class="services-item-info">
-                    <span class="item-name">تصميم مواقع</span>
-                    <div class="item-details">
-                      <span>تصميم مواقع بطريقة محترفة ومتميزة</span>
-                      <br /><br />
-                      <span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="services-item-footer">
-                <button class="btn services-item-btn">اطلب الآن</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
-            <div class="services-item-col">
-              <div class="services-item">
-                <a href="services.html">
-                  <div class="services-item-header">
-                    <img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
-                  </div>
-                  <div class="services-item-info">
-                    <span class="item-name">تصميم مواقع</span>
-                    <div class="item-details">
-                      <span>تصميم مواقع بطريقة محترفة ومتميزة</span>
-                      <br /><br />
-                      <span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="services-item-footer">
-                <button class="btn services-item-btn">اطلب الآن</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
-            <div class="services-item-col">
-              <div class="services-item">
-                <a href="services.html">
-                  <div class="services-item-header">
-                    <img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
-                  </div>
-                  <div class="services-item-info">
-                    <span class="item-name">تصميم مواقع</span>
-                    <div class="item-details">
-                      <span>تصميم مواقع بطريقة محترفة ومتميزة</span>
-                      <br /><br />
-                      <span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="services-item-footer">
-                <button class="btn services-item-btn">اطلب الآن</button>
-              </div>
-            </div>
-          </div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
+				<div class="services-item-col">
+					<div class="services-item">
+						<div class="services-item-header">
+							<div class="on-item-option" onclick="addToFav(1)" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="اضف الى قائمة المفضلة">
+								<i class="far fa-heart fav-icon"></i>
+							</div>
+							<a href="services.html">
+								<img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
+							</a>
+						</div>
+						<div class="services-item-info">
+							<a href="services.html">
+								<span class="item-name">تصميم مواقع</span>
+							</a>
+
+							<div class="item-details">
+								<span>تصميم مواقع بطريقة محترفة ومتميزة</span>
+								<br /><br />
+								<a href="dd">
+									<span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="services-item-footer">
+						<button class="btn services-item-btn">اطلب الآن</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
+				<div class="services-item-col">
+					<div class="services-item">
+						<div class="services-item-header">
+							<div class="on-item-option" onclick="addToFav(1)" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="اضف الى قائمة المفضلة">
+								<i class="far fa-heart fav-icon"></i>
+							</div>
+							<a href="services.html">
+								<img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
+							</a>
+						</div>
+						<div class="services-item-info">
+							<a href="services.html">
+								<span class="item-name">تصميم مواقع</span>
+							</a>
+
+							<div class="item-details">
+								<span>تصميم مواقع بطريقة محترفة ومتميزة</span>
+								<br /><br />
+								<a href="dd">
+									<span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="services-item-footer">
+						<button class="btn services-item-btn">اطلب الآن</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
+				<div class="services-item-col">
+					<div class="services-item">
+						<div class="services-item-header">
+							<div class="on-item-option" onclick="addToFav(1)" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="اضف الى قائمة المفضلة">
+								<i class="far fa-heart fav-icon"></i>
+							</div>
+							<a href="services.html">
+								<img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
+							</a>
+						</div>
+						<div class="services-item-info">
+							<a href="services.html">
+								<span class="item-name">تصميم مواقع</span>
+							</a>
+
+							<div class="item-details">
+								<span>تصميم مواقع بطريقة محترفة ومتميزة</span>
+								<br /><br/>
+								<a href="dd">
+									<span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
+								</a>ذ
+							</div>
+						</div>
+					</div>
+					<div class="services-item-footer">
+						<button class="btn services-item-btn">اطلب الآن</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 services-item-col-div">
+				<div class="services-item-col">
+					<div class="services-item">
+						<div class="services-item-header">
+							<div class="on-item-option" onclick="addToFav(1)" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="اضف الى قائمة المفضلة">
+								<i class="far fa-heart fav-icon"></i>
+							</div>
+							<a href="services.html">
+								<img src="./assets/imgs/services-item-2.png" alt="" width="100%;" />
+							</a>
+						</div>
+						<div class="services-item-info">
+							<a href="services.html">
+								<span class="item-name">تصميم مواقع</span>
+							</a>
+
+							<div class="item-details">
+								<span>تصميم مواقع بطريقة محترفة ومتميزة</span>
+								<br /><br />
+								<a href="dd">
+									<span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="services-item-footer">
+						<button class="btn services-item-btn">اطلب الآن</button>
+					</div>
+				</div>
+			</div>
         </div>
       </div>
     </div>
@@ -440,7 +472,7 @@
               <div class="footer-link-ul">
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <a class="footer-link-item"><i class="orange-square fas fa-square"></i>شروط
+                    <a class="footer-link-item" href="terms-of-use.html"><i class="orange-square fas fa-square"></i>شروط
                       الاستخدام
                     </a>
                   </li>
@@ -486,8 +518,18 @@
     </div>
   </footer>
   <script src="assets/js/jquery.js"></script>
+  
+  <script src="assets/js/popper.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
+
+  <script>
+
+    function addToFav(itemID){
+      alert(itemID)
+    }
+     
+  </script>
 </body>
 
 </html>
