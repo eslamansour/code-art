@@ -26,7 +26,7 @@ a:hover{
   text-decoration: none !important;
 }
 
-.nav-link-dropDown {
+.nav-link-dropDown, .user_card-dropdown{
   display: none;
   width: 100px;
   /* border: 1px solid #1c1c1c; */
@@ -41,15 +41,26 @@ a:hover{
   box-shadow: 3px 3px 7px #555555;
 }
 
-.nav-link-dropdown>.dropdown-item {
+.user_card-dropdown{
+  position: absolute;
+  top: 48px;
+  left: 0%;
+  background-color: #f5f5f5;
+  border: 0px;
+  box-shadow: 3px 3px 7px #555555;
+  width: fit-content;
+}
+
+.nav-link-dropdown>.dropdown-item ,
+.user_card-dropdown>.dropdown-item {
   padding-top: 10px;
   transition: 0.2s;
-
   padding-bottom: 10px;
   color: #0071bc;
 }
 
-.nav-link-dropdown>.dropdown-item:hover {
+.nav-link-dropdown>.dropdown-item:hover,
+.user_card-dropdown>.dropdown-item:hover {
   background-color: #0071bc;
   color: white;
 }
