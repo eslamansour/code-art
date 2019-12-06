@@ -58,7 +58,6 @@
     background-color: transparent !important;
     border-radius: 0px !important;
     border: none !important;
-    margin-right: -24px;
 }
 
 .service-details-bottom .nav-details .nav-tabs .nav-item .active:after {
@@ -70,7 +69,7 @@
     content: " ";
     position: relative;
     bottom: -66px;
-    left: -47%;
+    left: 50%;
 }
 
 .service-details-bottom .nav-details .nav-info-container {
