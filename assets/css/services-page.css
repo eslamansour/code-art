@@ -105,7 +105,9 @@ box-shadow: 2px 8px 17px #848484;
   font-size: 16px;
   color: rgb(151, 151, 151);
 }
-
+.service-page-item .item-info .item-provider-title {
+  color: rgb(151, 151, 151);
+}
 .service-page-item .item-info .item-provider-name {
   color: green;
 }
@@ -170,6 +172,7 @@ box-shadow: 2px 8px 17px #848484;
   top: 34px;
   display: block;
   transition: 0.4s;
+  width: 60%;
 }
 
 .service-page-item .order-btn:hover {
@@ -219,6 +222,7 @@ a.service-page-item-href-div:hover .service-page-item {
   .service-page-item .order-btn {
     margin-top: -20px;
     top: 30px;
+    width: 100%;
   }
 
   .service-page-item .order-red {
