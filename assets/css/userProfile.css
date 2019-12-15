@@ -133,6 +133,9 @@
 	color: silver;
 	font-size: 16px;
 }
+.action-icons:hover{
+	cursor: pointer;
+}
 
 .userProfile-item .item-info .item-provider-name {
 	color: green;
