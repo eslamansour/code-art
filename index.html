@@ -68,18 +68,15 @@
 						</span>
 					</a>
 					<div class="dropdown-menu nav-link-dropdown" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>
-							تصميم</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-camera"></i> تصوير
-							المناسبات</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-photo-video"></i> الرسوم
-							المتحركة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>تصميم</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-camera"></i> تصويرالمناسبات</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-photo-video"></i> الرسومالمتحركة</a>
 					</div>
 				</li>
 				<li class="nav-item ">
-					<a class="nav-link" href="received-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
+					<a class="nav-link" href="my-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
 						<span class="navbar-link-span">الطلبات</span>
 					</a>
 				</li>
@@ -133,10 +130,11 @@
 						</span>
 					</a>
 					<div class="dropdown-menu user_card-dropdown" aria-labelledby="">
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-shopping-bag"></i> الطلبات</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-exchange-alt"></i> الارجاع</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-user"></i> الملف الشخصي</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-sign-out-alt"></i> تسجيل
+						<a class="dropdown-item" href="my-orders.html"><i class="nav-link-icon fas fa-shopping-bag"></i> الطلبات</a>
+						<a class="dropdown-item" href="cart.html"><i class="nav-link-icon fas fa-shopping-cart"></i> سلة الشراء </a>
+						<a class="dropdown-item" href="fav-items.html"><i class="nav-link-icon fas fa-heart"></i> المفضلة</a>
+						<a class="dropdown-item" href="settings.html"><i class="nav-link-icon fas fa-edit"></i> تعديل البيانات</a>
+						<a class="dropdown-item" href="login.html"><i class="nav-link-icon fas fa-sign-out-alt"></i> تسجيل
 							الخروج</a>
 					</div>
 				</li>
@@ -310,7 +308,7 @@
 										<br /><br />
 										<a href="serviceProfile_User.html">
 											<span class="services-provider">مقدم الخدمة: اسامة عسكر</span>
-										</a>ذ
+										</a>
 									</div>
 								</div>
 							</div>
@@ -550,11 +548,23 @@
 	<script src="assets/js/popper.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/sweetalert.min.js"></script>
 
 	<script>
 
 		function addToFav(itemID) {
-			alert(itemID)
+			Swal.fire({
+				type: 'success',
+				title: 'تم  اضافة الخدمة الى المفضلة بنجاح',
+				showConfirmButton: false,
+				timer: 2000
+			})
+			// Swal.fire({
+			// 	type: 'error',
+			// 	title: 'حدث خطأ ما .. حاول مرة اخرى',
+			// 	showConfirmButton: false,
+			// 	timer: 2000
+			// })
 		}
 
 	</script>

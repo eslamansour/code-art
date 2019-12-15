@@ -214,14 +214,14 @@ a:hover{
 
 
 .section-row {
-  padding: 70px 50px !important;
+  padding: 30px 50px !important;
 }
 
 @media (max-width: 700px) {
 
 
   .section-row {
-    padding: 60px 20px !important;
+    padding: 30px 20px !important;
   }
 }
 

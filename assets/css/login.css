@@ -94,10 +94,8 @@
     width: 40%;
     border-radius: 0px !important;
 }
-
 .btn-submit:hover {
     color: white;
-    padding: 13px 80px;
     background-color: #1774d6 !important;
     border-radius: 20px !important;
     width: 50%;

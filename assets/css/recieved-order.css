@@ -8,7 +8,7 @@
 }
 
 .recieved-order {
-  padding: 80px 70px;
+  padding: 80px 30px;
 }
 
 .recieved-order-div{
@@ -38,7 +38,7 @@
 }
 
 .recieved-order-div-body .item{
-  padding: 10px 20px 20px 20px;
+  padding: 10px 0px 20px 0px;
 }
 
 .form-item{
@@ -56,7 +56,11 @@
   padding: 10px;
   width: 100%;
   margin-top: 10px;
+  font-size: 13px;
   font-weight: 0px !important;
+}
+.data-cell-label-days{
+  font-size: 10px;
 }
 
 .data-lable{
@@ -68,7 +72,21 @@
   color: white;
 }
 
-
+.actionBtn{
+  border-radius: 0px;
+  padding: 7px 40px;
+  font-size: 14px;
+  width: 100%;
+}
+.phoneInfo{
+  color:rgb(121, 121, 121);
+}
+.refuse-btn{
+  background-color: rgb(221, 221, 221);
+}
+.refuse-btn:hover{
+  background-color: rgb(177, 177, 177);
+}
 @media (max-width: 1100px) {
   .recieved-order {
     padding: 30px 40px;
@@ -96,7 +114,10 @@
     font-size: 13px;
   }
   .recieved-order .recieved-order-div .recieved-order-div-body{
-    padding: 10px 20px;
+    padding: 10px 40px;
+  }
+  .hideMe{
+    display: none;
   }
 }
 @media (max-width: 900px) {
@@ -125,7 +146,7 @@
 
 @media (max-width: 575px) {
   .recieved-order .recieved-order-div .recieved-order-div-body{
-    padding: 10px 0px;
+    padding: 10px 30px;
   }
 }
 

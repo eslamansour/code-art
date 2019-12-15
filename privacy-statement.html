@@ -47,33 +47,30 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="index.html"><i class="nav-link-icon fas fa-home"></i>
 						<span class="navbar-link-span">الرئيسية</span>
 					</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="received-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
-						<span class="navbar-link-span">الطلبات</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link dropDown-navLink dropDown-navLink dropdown-toggle" href="#" role="button"
-						id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+				<li class="nav-item ">
+					<a class="nav-link dropDown-navLink dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
 							class="nav-link-icon fas fa-boxes"></i>
 						<span class="navbar-link-span">الخدمات <i class="fas fa-angle-down"></i>
 						</span>
 					</a>
 					<div class="dropdown-menu nav-link-dropdown" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>
-							تصميم</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-camera"></i> تصوير
-							المناسبات</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-photo-video"></i> الرسوم
-							المتحركة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>تصميم</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-camera"></i> تصويرالمناسبات</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-photo-video"></i> الرسومالمتحركة</a>
 					</div>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="my-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
+						<span class="navbar-link-span">الطلبات</span>
+					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="complaints-suggestions.html"><i
@@ -84,16 +81,6 @@
 				<li class="nav-item ">
 					<a class="nav-link" href="#"><i class="nav-link-icon fas fa-headset"></i>
 						<span class="navbar-link-span">تواصل معنا</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="login.html"><i class="nav-link-icon fas fa-sign-in-alt"></i>
-						<span class="navbar-link-span">تسجيل الدخول</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="signup.html"><i class="nav-link-icon fas fa-user-plus"></i>
-						<span class="navbar-link-span">تسجيل</span>
 					</a>
 				</li>
 				<li class="nav-item">
@@ -127,6 +114,23 @@
 					<i class="fas fa-search"></i>
 				</button>
 			</form>
+			<ul class="navbar-nav" style="display: inline-block;">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropDown-navLink_login dropdown-toggle" href="#" role="button" id=""
+						data-toggle="" aria-haspopup="false" aria-expanded="false" data-target="">
+						<span class="navbar-link-span">اهلا عمر <i class="fas fa-angle-down"></i>
+						</span>
+					</a>
+					<div class="dropdown-menu user_card-dropdown" aria-labelledby="">
+						<a class="dropdown-item" href="my-orders.html"><i class="nav-link-icon fas fa-shopping-bag"></i> الطلبات</a>
+						<a class="dropdown-item" href="cart.html"><i class="nav-link-icon fas fa-shopping-cart"></i> سلة الشراء </a>
+						<a class="dropdown-item" href="fav-items.html"><i class="nav-link-icon fas fa-heart"></i> المفضلة</a>
+						<a class="dropdown-item" href="settings.html"><i class="nav-link-icon fas fa-edit"></i> تعديل البيانات</a>
+						<a class="dropdown-item" href="login.html"><i class="nav-link-icon fas fa-sign-out-alt"></i> تسجيل
+							الخروج</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</nav>
 	<section>

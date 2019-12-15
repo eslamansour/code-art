@@ -8,16 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<link rel="shortcut icon" width="42" height="60" href="./assets/imgs/logo.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css " />
+	<link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 	<link rel="stylesheet" href="assets/css/rtl.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 
-	<!-- payment -->
-	<link rel="stylesheet" href="assets/css/payment.css" />
-	<link rel="stylesheet" href="assets/css/paymentModal.css" />
+	<!-- order-status -->
+	<link rel="stylesheet" href="assets/css/order-status.css" />
 
-	
+	<!-- timeLine -->
+	<link rel="stylesheet" href="assets/css/timeLine.css"/>
 
 </head>
 
@@ -136,103 +136,96 @@
 			</ul>
 		</div>
 	</nav>
-
-
 	<section>
-		<div class="section-payment">
-			<div class="payment">
+		<div class="section-order-status">
+			<div class="order-status">
 				<div class="container-fluid">
 					<div class="">
-						<div class="payment-div">
-							<div class="payment-div-hdr">
-								<p class="payment-div-hdr-text">
-									طريقة الدفع
+						<div class="order-status-div">
+							<div class="order-status-div-hdr">
+								<p class="order-status-div-hdr-text">
+									 متابعة الطلب
 								</p>
 							</div>
-							<div class="payment-div-body">
-								<div class="row">
-									<div class="payWay col-12" id="payWayDiv">
-										<div class="payWay-div">
-											<div class="row">
-												<div class="col-lg-3 col-md-6 col-sm-6">
-													<button class="btn pay-btn pay-btn-1">PayPal</button>
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6">
-													<button class="btn pay-btn pay-btn-2">ApplePay</button>
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6">
-													<button class="btn pay-btn pay-btn-3" data-toggle="modal" data-target="#paymentModal">بطاقة ائتمانية</button>
-												</div>
-												<div class="col-lg-3 col-md-6 col-sm-6">
-													<button class="btn pay-btn pay-btn-4">تحويل بنكي</button>
+							<div class="order-status-div-body">
+
+								<div class="item">
+
+									
+													<div class="cd-horizontal-timeline loaded">
+														<section class="time-line-box">
+															<div class="swiper-container text-center"> 
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide">
+																		<div class="timestamp"></div>
+																		<div class="status selected"><span lass="firstSpan"></span></div>
+																		<span class="timeLine-text selectedtext">تم الطلب</span>
+																	</div>
+																	<div class="swiper-slide">
+																		<div class="timestamp"></div>
+																		<div class="status selected"><span></span></div>
+																		<span class="timeLine-text selectedtext">قيد التنفيذ</span>
+																	</div>
+																	<div class="swiper-slide">
+																		<div class="timestamp"></div>
+																		<div class="status selected"><span></span></div>
+																		<span class="timeLine-text selectedtext">تم الشحن </span>
+																	</div>
+																	<div class="swiper-slide lastSwiper">
+																		<div class="timestamp"></div>
+																		<div class="status lastStatus"><span class="lastSpan"></span></div>
+																		<span class="timeLine-text timeLine-text-last">تم الاستلام</span>
+																	</div>
+																</div>
+															</div>
+														</section>
+													</div>
+
+
+									<div class="row">
+										<div class="col-lg-3 col-md-4 col-sm-12 div-1">
+											<div class="data-cell">
+												<img width="200px" height="130px" src="assets/imgs/item-img.png">
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-5 col-sm-6 div-2">
+											<div class="data-cell col-data-3 ">
+												<label class="data-cell-label-title">تصميم موقع احترافي</label>
+												<br>
+												<label class="data-cell-label-category"><i
+														class="fas fa-bars pl-3"></i>تصميم مواقع</label>
+												<br>
+												<label class="data-cell-label-serviceProvider"><i
+														class="fas fa-user pl-3"></i>اسامة
+													عسكر</label>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-3 col-sm-6 div-3">
+											<div class="data-cell ">
+												<br>
+												<label class="data-cell-label-date">1-1-2019</label>
+												<br><br>
+												<label class="data-cell-label-price">1223 ريال</label>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-6 col-sm-12 div-4">
+											<div class="address-col2">
+												<div class="address-col-info">
+														<a href="rateItem.html"><button class="btn cont-btn"><b>تقييم</b></button></a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<form class="needs-validation" id="signupForm" novalidate>
-						<div class="modal-header paymentModal-hdr">
-							<h5 class="modal-title" id="exampleModalCenterTitle"> دفع بواسطة البطاقة الائتمانية</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body paymentModal-body">
-							
-								<div class="item">
-									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<div class="form-group">
-												<label for="paymentPopup-name" class="data-cell-label-title"> اسم حامل البطاقة <span class="required-star"><sup>*</sup></span></label>
-												<input type="text" class="form-control txtBox-name" id="paymentPopup-name" value="" required>
-												<div class="invalid-feedback invalid-lbl"> اسم حامل البطاقة مطلوب </div>
-											</div>
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<div class="form-group">
-												<label for="paymentPopup-cardNum" class="data-cell-label-title"> رقم البطاقة ( xxxx  xxxx  xxxx  xxxx ) <span class="required-star"><sup>*</sup></span></label>
-												<input type="text" class="form-control txtBox-name" id="paymentPopup-cardNum" maxlength="19" placeholder="" required>
-												<div class="invalid-feedback invalid-lbl" id="paymentPopup-cardNum-error"> رقم البطاقة مطلوب </div>
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12">
-											<div class="form-group">
-												<label for="paymentPopup-cardDate" class="data-cell-label-title"> تاريخ انتهاء البطاقة <span class="required-star"><sup>*</sup></span></label>
-												<input type="text" class="form-control txtBox-name" id="paymentPopup-cardDate" maxlength="5" required>
-												<div class="invalid-feedback invalid-lbl" id="paymentPopup-cardDate-error"> تارخ الانتهاء مطلوب </div>
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12">
-											<div class="form-group datePickerDiv">
-												<label for="paymentPopup-security" class="data-cell-label-title"> كود الحماية  cvv / cvc <span class="required-star"><sup>*</sup></span></label>
-												<input type="text" class="txtBox-name dateInput form-control" id="paymentPopup-security" maxlength="3" required>
-												<div class="invalid-feedback invalid-lbl" id="paymentPopup-security-error"> كود الحماية مطلوب </div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								
-						</div>
-						<div class="modal-footer paymentModal-footer">
-							<button type="button" class="btn btn-light paymentModal-btn paymentModal-btn-close" data-dismiss="modal">الغاء</button>
-							<button type="submit" class="btn btn-primary paymentModal-btn paymentModal-btn-save">دفع</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
 	</section>
-
 	<footer>
 		<div class="footer-div">
 			<div class="container-fluid">
@@ -317,114 +310,6 @@
 	<script src="assets/js/popper.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/script.js"></script>
-
-	<!-- formValidation -->
-	<script>
-		var isValidCardNumber = false;
-		$("#paymentPopup-cardNum").on("input",function() {
-			var num = $("#paymentPopup-cardNum").val()
-			if(num.length == 4 || num.length == 9 || num.length == 14){
-				num+=" ";
-				$("#paymentPopup-cardNum").val(num)
-			}
-			if(num.length != 19){
-				
-				isValidCardNumber = false
-			}
-			else if(num.length == 19 && (num[4] == ' ' && num[9] == ' ' && num[14] == ' ')){
-				$("#paymentPopup-cardNum").removeClass('is-invalid')
-				$("#paymentPopup-cardNum-error").css('color', 'black');
-				isValidCardNumber = true
-			}
-		});
-
-		var isValidCardExpire = false;
-		$("#paymentPopup-cardDate").on("input",function() {
-			var num = $("#paymentPopup-cardDate").val();
-			
-			if(num.length == 2){
-				num+="/";
-				$("#paymentPopup-cardDate").val(num)
-			}
-			$("#paymentPopup-cardDate").val(num)
-			
-			console.log(num.length);
-			
-			if(num.length != 5){
-				isValidCardExpire = false
-			}
-			else if((num.length == 5) && (num[2] == '/')){
-				$("#paymentPopup-cardDate").removeClass('is-invalid')
-				$("#paymentPopup-cardDate-error").css('color', 'black');
-				isValidCardExpire = true
-			}
-		});
-
-		var isValidCardCCV = false;
-		$("#paymentPopup-security").on("input",function() {
-			var num = $("#paymentPopup-security").val();
-			
-			if(num.length != 3){
-				isValidCardCCV = false
-			}
-			else if(num.length == 3){
-				$("#paymentPopup-security").removeClass('is-invalid')
-				$("#paymentPopup-security-error").css('color', 'black');
-				isValidCardCCV = true
-			}
-		});
-
-		(function() {'use strict';
-			window.addEventListener('load', function() {
-				// Fetch all the forms we want to apply custom Bootstrap validation styles to
-				var forms = document.getElementsByClassName('needs-validation');
-				// Loop over them and prevent submission
-				var validation = Array.prototype.filter.call(forms, function(form) {
-					form.addEventListener('submit', function(event) {
-						if (form.checkValidity() === false) {
-							event.preventDefault();
-							event.stopPropagation();
-						}
-						form.classList.add('was-validated');
-						if (!isValidCardNumber){
-							$("#paymentPopup-cardNum").addClass('is-invalid')
-							$("#paymentPopup-cardNum-error").css('color', '#dc3545');
-							event.preventDefault();
-							event.stopPropagation();
-						}
-						else{
-							$("#paymentPopup-cardNum").removeClass('is-invalid')
-							$("#paymentPopup-cardNum-error").css('color', 'black');
-						}
-						if (!isValidCardExpire){
-							$("#paymentPopup-cardDate").addClass('is-invalid')
-							$("#paymentPopup-cardDate-error").css('color', '#dc3545');
-							event.preventDefault();
-							event.stopPropagation();
-						}
-						else{
-							$("#paymentPopup-cardDate").removeClass('is-invalid')
-							$("#paymentPopup-cardDate-error").css('color', 'black');
-						}
-						if (!isValidCardCCV){
-							$("#paymentPopup-security").addClass('is-invalid')
-							$("#paymentPopup-security-error").css('color', '#dc3545');
-							event.preventDefault();
-							event.stopPropagation();
-						}
-						else{
-							$("#paymentPopup-security").removeClass('is-invalid')
-							$("#paymentPopup-security-error").css('color', 'black');
-						}
-						
-					}, false);
-				});
-			}, false);
-		})();
-	</script>
-	<script>
-		
-	</script>
 </body>
 
 </html>

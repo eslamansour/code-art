@@ -47,33 +47,30 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="index.html"><i class="nav-link-icon fas fa-home"></i>
 						<span class="navbar-link-span">الرئيسية</span>
 					</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="received-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
-						<span class="navbar-link-span">الطلبات</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link dropDown-navLink dropDown-navLink dropdown-toggle" href="#" role="button"
-						id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+				<li class="nav-item ">
+					<a class="nav-link dropDown-navLink dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
 							class="nav-link-icon fas fa-boxes"></i>
 						<span class="navbar-link-span">الخدمات <i class="fas fa-angle-down"></i>
 						</span>
 					</a>
 					<div class="dropdown-menu nav-link-dropdown" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>
-							تصميم</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-camera"></i> تصوير
-							المناسبات</a>
-						<a class="dropdown-item" href="#"><i class="nav-link-icon fas fa-photo-video"></i> الرسوم
-							المتحركة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-palette"></i>تصميم</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-print"></i> الطباعة</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-language"></i> لترجمه</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-camera"></i> تصويرالمناسبات</a>
+						<a class="dropdown-item" href="services.html"><i class="nav-link-icon fas fa-photo-video"></i> الرسومالمتحركة</a>
 					</div>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="my-orders.html"><i class="nav-link-icon fas fa-box-open"></i>
+						<span class="navbar-link-span">الطلبات</span>
+					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="complaints-suggestions.html"><i
@@ -105,7 +102,7 @@
 						<a class="nav-link" href="fav-items.html">
 							<i class="nav-link-icon fas fa-heart"></i>
 						</a>
-						<a class="nav-link" href="cart.html">
+						<a class="nav-link" href="index.html">
 							<i class=" cartHasNotification fas fa-circle"></i><i
 								class="nav-link-icon fas fa-shopping-cart"></i>
 						</a>
@@ -117,6 +114,23 @@
 					<i class="fas fa-search"></i>
 				</button>
 			</form>
+			<ul class="navbar-nav" style="display: inline-block;">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropDown-navLink_login dropdown-toggle" href="#" role="button" id=""
+						data-toggle="" aria-haspopup="false" aria-expanded="false" data-target="">
+						<span class="navbar-link-span">اهلا عمر <i class="fas fa-angle-down"></i>
+						</span>
+					</a>
+					<div class="dropdown-menu user_card-dropdown" aria-labelledby="">
+						<a class="dropdown-item" href="my-orders.html"><i class="nav-link-icon fas fa-shopping-bag"></i> الطلبات</a>
+						<a class="dropdown-item" href="cart.html"><i class="nav-link-icon fas fa-shopping-cart"></i> سلة الشراء </a>
+						<a class="dropdown-item" href="fav-items.html"><i class="nav-link-icon fas fa-heart"></i> المفضلة</a>
+						<a class="dropdown-item" href="settings.html"><i class="nav-link-icon fas fa-edit"></i> تعديل البيانات</a>
+						<a class="dropdown-item" href="login.html"><i class="nav-link-icon fas fa-sign-out-alt"></i> تسجيل
+							الخروج</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</nav>
 	<section>
@@ -145,7 +159,6 @@
 												<label class="data-cell-label-title"> <a href="service-details.html"> تصميم موقع احترافي بطريقة مميزة </a> </label>
 												<br>
 												<p class="data-cell-label-details">نقوم بتصميم مواقع الكترونية مخترفة من خلال احدث التقنيات واحدث البرامج المخصصة للتعليم</p>
-												<label class="data-cell-label-details fav-date">21-1-2019</label>
 											</div>
 										</div>
 										<div class="col-lg-2 col-md-3 col-sm-12 div-4">
@@ -162,120 +175,14 @@
 										</div>
 										<div class="col-lg-2 col-md-3 col-sm-4 div-4">
 											<div class="data-cell mt-3">
-												<button class="btn fav-action-btn"><i class="fas fa-shopping-cart"></i>
-													اضافة الى عربة التسوق </button>
+												<a href="order-application.html"><button class="btn addToCart">شراء</button></a>
 											</div>
 										</div>
 									</div>
 								</div>
 								<hr>
 
-								<div class="item">
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-6 div-1">
-											<div class="data-cell">
-												<img width="200px" height="130px" src="assets/imgs/item-img.png">
-											</div>
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell col-data-3 ">
-													<label class="data-cell-label-title"> <a href="service-details.html"> تصميم موقع احترافي بطريقة مميزة </a> </label>
-													<br>
-												<p class="data-cell-label-details">نقوم بتصميم مواقع الكترونية مخترفة من خلال احدث التقنيات واحدث البرامج المخصصة للتعليم</p>
-												<label class="data-cell-label-details fav-date">21-1-2019</label>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-12 div-4">
-											<label class="price-lbl">123456 ريال</label>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-4 div-1-actions"></div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell mr-3 mt-3 datacell-action-1">
-												<button class="btn fav-action-btn"><i class="fas fa-trash"></i> حذف الخدمة</button>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 div-4">
-											<div class="data-cell mt-3">
-												<button class="btn fav-action-btn"><i class="fas fa-shopping-cart"></i>
-													اضافة الى عربة التسوق </button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<hr>
-
-								<div class="item">
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-6 div-1">
-											<div class="data-cell">
-												<img width="200px" height="130px" src="assets/imgs/item-img.png">
-											</div>
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell col-data-3 ">
-													<label class="data-cell-label-title"> <a href="service-details.html"> تصميم موقع احترافي بطريقة مميزة </a> </label>
-													<br>
-												<p class="data-cell-label-details">نقوم بتصميم مواقع الكترونية مخترفة من خلال احدث التقنيات واحدث البرامج المخصصة للتعليم</p>
-												<label class="data-cell-label-details fav-date">21-1-2019</label>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-12 div-4">
-											<label class="price-lbl">123456 ريال</label>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-4 div-1-actions"></div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell mr-3 mt-3 datacell-action-1">
-												<button class="btn fav-action-btn"><i class="fas fa-trash"></i> حذف الخدمة</button>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 div-4">
-											<div class="data-cell mt-3">
-												<button class="btn fav-action-btn"><i class="fas fa-shopping-cart"></i> اضافة الى عربة التسوق </button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<hr>
-
-								<div class="item">
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-6 div-1">
-											<div class="data-cell">
-												<img width="200px" height="130px" src="assets/imgs/item-img.png">
-											</div>
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell col-data-3 ">
-												<label class="data-cell-label-title"> تصميم موقع احترافي بطريقة مميزة</label>
-												<br>
-												<p class="data-cell-label-details">نقوم بتصميم مواقع الكترونية مخترفة من خلال احدث التقنيات واحدث البرامج المخصصة للتعليم</p>
-												<label class="data-cell-label-details fav-date">21-1-2019</label>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-12 div-4">
-											<label class="price-lbl">123456 ريال</label>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-4 div-1-actions"></div>
-										<div class="col-lg-7 col-md-6 col-sm-6 div-2">
-											<div class="data-cell mr-3 mt-3 datacell-action-1">
-												<button class="btn fav-action-btn"><i class="fas fa-trash"></i> حذف
-													الخدمة</button>
-											</div>
-										</div>
-										<div class="col-lg-2 col-md-3 col-sm-4 div-4">
-											<div class="data-cell mt-3">
-												<button class="btn fav-action-btn"><i class="fas fa-shopping-cart"></i>
-													اضافة الى عربة التسوق </button>
-											</div>
-										</div>
-									</div>
-								</div>
+								
 
 							</div>
 						</div>
