@@ -74,7 +74,7 @@
 
 .btn-submit:hover {
     color: white;
-    padding: 13px 80px;
+    padding: 3px 40px;
     background-color: #1774d6 !important;
     border-radius: 20px !important;
     width: 30%;
@@ -128,10 +128,12 @@
         padding: 10px 10px;
     }
     .rateItem .rateItem-div .rateItem-div-hdr p {
-        font-size: 14px;
+        font-size: 17px;
     }
     .btn-submit{
-        width: 90%;
+        width: 40%;
+        padding: 6px 0px;
+        font-size: 14px;
     }
     .btn-submit:hover{
         width: 90%;
@@ -144,10 +146,13 @@
     }
     
     .rateItem-div-body{
-        padding: 10px 30px;
+        padding: 30px 30px;
         background-color: #f9f9f9;
         box-shadow: 2px 8px 17px #848484;
         font-size: 15px;
+    }
+    .address-col{
+        padding: 10px 0px;
     }
 }
 
@@ -155,12 +160,15 @@
     .rateItem {
         padding: 10px 0px;
     }
+    .rateItem .rateItem-div .rateItem-div-hdr p {
+        font-size: 15px;
+    }
     .info-title-data{
         display: block;
         margin-top: 10px;
     }
     .rateItem-div-body{
-        padding: 10px 30px;
+        padding: 10px 0px;
         background-color: #f9f9f9;
         box-shadow: 2px 8px 17px #848484;
         font-size: 13px;

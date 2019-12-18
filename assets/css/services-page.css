@@ -241,8 +241,8 @@ a.service-page-item-href-div:hover .service-page-item {
   }
 
   .service-page-item .item-info p {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 13px;
+    margin-bottom: 5px;
   }
 
   .service-page-item .item-info .item-provider,
@@ -252,5 +252,9 @@ a.service-page-item-href-div:hover .service-page-item {
 
   .service-page-item .item-info .item-rating .item-rate-star {
     font-size: 16px;
+  }
+  
+.service-page-item .item-info .item-rating {
+    margin-top: 10px;
   }
 }

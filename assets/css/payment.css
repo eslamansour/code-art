@@ -173,6 +173,10 @@
   .data-lable{
     font-size: 12px;
   }
+  .pay-btn{
+    padding: 7px;
+    
+  }
 }
 
 @media (max-width: 575px) {

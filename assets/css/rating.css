@@ -38,3 +38,9 @@
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+@media (max-width: 724px) {
+    .rate:not(:checked) > label {
+        font-size:30px;
+    }
+}

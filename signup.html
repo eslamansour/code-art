@@ -143,13 +143,16 @@
 												<div class="col-lg-12 col-md-12 col-sm-12">
 													<div class="data-cell">
 														<div class="form-group">
-															<label for="country-form" class="data-cell-label-title"> الدولة</label>
-															<select class="form-control txtBox-name selectOption" onchange="countryChange()" id="country-form" required>
+															<label for="country-form" class="data-cell-label-title">
+																الدولة</label>
+															<select class="form-control txtBox-name selectOption"
+																onchange="countryChange()" id="country-form" required>
 																<option selected hidden></option>
 																<option>مصر</option>
 																<option>المملكة العربية السعودية</option>
 															</select>
-															<div class="invalid-feedback invalid-lbl">  اختر الدولة   </div>
+															<div class="invalid-feedback invalid-lbl"> اختر الدولة
+															</div>
 														</div>
 													</div>
 												</div>
@@ -158,11 +161,14 @@
 												<div class="col-lg-12 col-md-12 col-sm-12">
 													<div class="data-cell">
 														<div class="form-group">
-															<label for="city-form" class="data-cell-label-title"> المدينة</label>
-															<select class="form-control txtBox-name selectOption" id="city-form" required>
+															<label for="city-form" class="data-cell-label-title">
+																المدينة</label>
+															<select class="form-control txtBox-name selectOption"
+																id="city-form" required>
 																<option selected hidden></option>
 															</select>
-															<div class="invalid-feedback invalid-lbl">  اختر المدينه   </div>
+															<div class="invalid-feedback invalid-lbl"> اختر المدينه
+															</div>
 														</div>
 													</div>
 												</div>
@@ -220,7 +226,6 @@
 		</div>
 
 	</section>
-
 	<footer>
 		<div class="footer-div">
 			<div class="container-fluid">
@@ -264,7 +269,7 @@
 									</li>
 									<li class="list-group-item">
 										<a class="footer-link-item" href="helping.html"><i
-												class="orange-square fas fa-square"></i>المساعدة</a>
+												class="orange-square fas fa-square"></i>تواصل معنا</a>
 									</li>
 								</ul>
 							</div>
@@ -333,7 +338,7 @@
 							event.stopPropagation();
 						}
 						form.classList.add('was-validated');
-						if (!isValid){
+						if (!isValid) {
 							event.preventDefault();
 							event.stopPropagation();
 						}
@@ -343,31 +348,31 @@
 		})();
 
 
-		function countryChange(){
+		function countryChange() {
 			var selectedCountry = $("#country-form").val();
 			$('#city-form').find('option').remove().end().append('<option selected hidden></option>');
-			
-			if (selectedCountry == "مصر"){
+
+			if (selectedCountry == "مصر") {
 				$('#city-form').append(`<option value="مصر 1"> 
 					مصر 1 
-				</option>`); 
+				</option>`);
 				$('#city-form').append(`<option value="مصر 1"> 
 					مصر 1 
-				</option>`); 
+				</option>`);
 				$('#city-form').append(`<option value="مصر 3"> 
 					مصر 3 
-				</option>`);	  
+				</option>`);
 			}
-			if (selectedCountry == "المملكة العربية السعودية"){
+			if (selectedCountry == "المملكة العربية السعودية") {
 				$('#city-form').append(`<option value="السعودية 1"> 
 					السعودية 1 
-				</option>`); 
+				</option>`);
 				$('#city-form').append(`<option value="السعودية 1"> 
 					السعودية 1 
-				</option>`); 
+				</option>`);
 				$('#city-form').append(`<option value="السعودية 3"> 
 					السعودية 3 
-				</option>`);	  
+				</option>`);
 			}
 		}
 	</script>

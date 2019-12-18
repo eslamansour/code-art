@@ -78,6 +78,14 @@
 
 }
 
+
+@media (max-width: 1200px) {
+    .navbar-link-span {
+        font-size: 13px;
+    }
+}
+
+
 @media (max-width: 1107px) {
     .navbar-expand-lg {
         padding: 5px 19px;

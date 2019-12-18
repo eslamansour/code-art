@@ -45,18 +45,23 @@
 }
 
 .data-cell img {
-    border: 15px solid #f7931e;
+    border: 5px solid #f7931e;
+    display: block;
+    margin: auto;
+    width: 70%;
+    object-fit: contain;
+    margin-bottom: 30px;
 }
 
 .data-cell-label-title {
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .data-cell-label-category {
     color: #9e9e9e;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .data-cell-label-category i {
@@ -66,7 +71,7 @@
 .data-cell-label-serviceProvider,
 .data-cell-label-date {
     color: #9e9e9e;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .data-cell-label-serviceProvider i {
@@ -88,7 +93,7 @@
 .cont-btn {
     background-color: #f7931e;
     border-radius: 0px;
-    padding: 5px 20px;
+    padding: 5px 0px;
     color: white;
     transition: 0.4s;
     width: 50%;
@@ -199,6 +204,19 @@
         margin: auto;
         display: block;
     }
+    
+    .data-cell-label-category {
+        font-size: 16px;
+    }
+
+    .data-cell-label-serviceProvider,
+    .data-cell-label-date {
+        font-size: 16px;
+    }
+
+    .data-cell-label-price {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -212,7 +230,23 @@
     }
 
     .div-2, .div-3{
-        width: 50% !important;
+        width: 100% !important;
+    }
+    
+    .data-cell-label-category {
+        font-size: 15px;
+    }
+
+    .data-cell-label-serviceProvider,
+    .data-cell-label-date {
+        font-size: 14px;
+    }
+
+    .data-cell-label-price {
+        font-size: 14px;
+    }
+    .data-cell-label-title-empty{
+        display: none;
     }
 }
 
