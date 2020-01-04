@@ -168,9 +168,27 @@ service-details
     color:#989898 !important;
 }
 
-
-
-
+.priceBtn{
+    border:1px solid rgb(23, 161, 23);
+    background-color:  transparent;
+    color:rgb(23, 161, 23);
+    transition: 0.4s;
+    margin-left:10px !important;
+    margin-top: 10px;
+    border-radius: 8px !important;
+    padding: 10px 20px;
+}
+.priceBtn:hover{
+    border:1px solid rgb(23, 161, 23);
+    background-color:  rgba(23, 161, 23, 0.144);
+    color:rgb(23, 161, 23);
+}
+.priceBtn:not(:disabled):not(.disabled).active,
+.priceBtn:not(:disabled):not(.disabled):active{
+    border:1px solid rgb(23, 161, 23);
+    background-color:  rgb(23, 161, 23);
+    color:white;
+}
 @media (max-width: 1000px) {
     .service-details .service-details-up-intro .service-introImgs-div .service-introImg {
         border: 10px #0071bc solid;
@@ -319,7 +337,10 @@ service-details
     }
 
 
-
+    .priceBtn{
+        padding: 8px 13px;
+        font-size: 14px;
+    }
 
 
     .service-details .service-details-up-intro .service-info-details .service-info-details-price {
@@ -492,6 +513,11 @@ service-details
     .service-details .service-details-up-info .info-list .list-group-item-orange{
         background-color: #f7931e !important;
         padding: 10px 20px;
+    }
+
+    .priceBtn{
+        padding: 5px 6px;
+        font-size: 11px;
     }
 }
 
