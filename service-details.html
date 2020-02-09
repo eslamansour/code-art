@@ -219,21 +219,27 @@
 											&nbsp; &nbsp; &nbsp;<span class="service-info-details-prive-off"> 22 %</span>
 										</p>
 										<div class="btn-group btn-group-toggle" data-toggle="buttons">
-											<label class="btn btn-light priceBtn active">
+											<label class="btn btn-light priceBtn active" onclick="changeOffer(1)">
 												<input type="radio" name="price-form" id="price-Class-1-form" autocomplete="off" value="75" checked> 75 ريال
 											</label>
-											<label class="btn btn-light priceBtn">
+											<label class="btn btn-light priceBtn" onclick="changeOffer(2)">
 												<input type="radio" name="price-form" id="price-Class-1-form" autocomplete="off" value="100"> 100 ريال
 											</label>
-											<label class="btn btn-light priceBtn">
+											<label class="btn btn-light priceBtn" onclick="changeOffer(3)">
 												<input type="radio" name="price-form" id="price-Class-1-form" autocomplete="off" value="150"> 150 ريال
 											</label>
 										</div>
 										
 										<div class="deliver-day">
-											<span class="service-info-details-deliver-day">ميعاد التسليم&nbsp;
-												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3
-												أيام</span>
+											<span class="service-info-details-deliver-day" id="offer-1" style="display: block;">
+												ميعاد التسليم &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 أيام
+											</span>
+											<span class="service-info-details-deliver-day" id="offer-2" style="display: none;">
+												ميعاد التسليم &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 أيام
+											</span>
+											<span class="service-info-details-deliver-day" id="offer-3" style="display: none;">
+												ميعاد التسليم &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3 أيام
+											</span>
 										</div>
 										<div class="deliver-count">
 											العدد
@@ -705,6 +711,25 @@
 	<script src="assets/js/popper.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+		function changeOffer(offerNumber) {
+			if(offerNumber == 1){
+				$("#offer-1").show();
+				$("#offer-2").hide();
+				$("#offer-3").hide();
+			}
+			else if(offerNumber == 2){
+				$("#offer-1").hide();
+				$("#offer-2").show();
+				$("#offer-3").hide();
+			}
+			else if(offerNumber == 3){
+				$("#offer-1").hide();
+				$("#offer-2").hide();
+				$("#offer-3").show();
+			}
+		}
+	</script>
 </body>
 
 </html>
